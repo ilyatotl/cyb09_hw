@@ -1,0 +1,8 @@
+[Unit]
+Description=monitor one-shot
+
+[Service]
+Type=oneshot
+User=root
+ExecStart=/usr/bin/python3 /usr/sbin/monitor.py
+StandardOutput=journal

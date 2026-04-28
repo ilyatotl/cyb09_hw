@@ -1,0 +1,11 @@
+[Unit]
+Description=monitor timer
+Requires=monitor.service
+
+[Timer]
+OnBootSec=1min
+OnUnitActiveSec=5min
+AccuracySec=1sec
+
+[Install]
+WantedBy=timers.target
